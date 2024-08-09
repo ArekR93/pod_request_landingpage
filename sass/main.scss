@@ -151,6 +151,130 @@ main{
                 .error-show{
                     display: block;
                 }
+                .error-border{
+                    border: 2px solid $red;
+                }
+            }
+        }
+    }
+}
+
+//Media
+
+@media (min-width:768px){
+    main{
+        overflow: hidden;
+        position: relative;
+        .tablet-pattern, .tablet-pattern-decoration{
+            display: block;
+        }
+        .tablet-pattern{
+            position: absolute;
+            top: 0;
+            width: 150%;
+            
+            // z-index: -1;
+        }
+        .mobile-pattern{
+            display: none;
+        }
+        .shadow{
+            display: none;
+        }
+
+        .content-box{
+            background-color: $blue950;
+            padding: 1em 2em;
+            height: 100vh;
+            align-items: flex-start;
+            justify-content: flex-start;
+            .logo{
+                margin-top: 6em;
+            }
+            .text-content{
+                margin-top: 1em;
+                margin-bottom: 4em;
+                .text-title{
+                    @include chivoLightUpp;
+                    color:$green;
+                    font-size: 28px;
+                    text-align: center;
+                    .title-white{
+                        color:$white;
+                    }
+                }
+                .text-paragraph{
+                    margin-top: 1em;
+                    @include chivoLight;
+                    font-size: 15px;
+                    text-align: center;
+                    color:$white
+                }
+            }
+            .sm-box{
+                display: flex;
+                align-items: center;
+                margin-bottom: 3em;
+                .sm-icon{
+                    margin-right: 1em;
+                }
+                .sm-icon-spotify{
+                    width: 60px;
+                }
+                .sm-icon-apple{
+                    width: 50px;
+                }
+                .sm-icon-google{
+                    width: 80px;
+                }
+                .sm-icon-pocket{
+                    width: 80px;
+                }
+                
+            }
+            form{
+                width: 100%;
+                .input-box{
+                    display: flex;
+                    flex-direction: column;
+                    .input-mail{
+                        background-color: $blue900;
+                        padding: 1em 2em;
+                        border: none;
+                        border-radius: 25px;
+                        margin-bottom: .5em;
+                    }
+                    
+                    .input-mail::placeholder{
+                        @include chivoBold;
+                        color:$blue300;
+                    }
+                    .input-mail[type=text]{
+                        @include chivoBold;
+                        color:$blue300;
+                    }
+                    .input-btn{
+                        background-color: $green;
+                        color:$blue950;
+                        @include chivoBold;
+                        padding: .8em 2em;
+                        border: none;
+                        border-radius: 25px;
+    
+                    }
+                    .error-state{
+                        display: none;
+                        @include chivoBold;
+                        color: $red;
+                        text-align: center;
+                    }
+                    .error-show{
+                        display: block;
+                    }
+                    .error-border{
+                        border: 2px solid $red;
+                    }
+                }
             }
         }
     }

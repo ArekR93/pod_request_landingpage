@@ -8,8 +8,10 @@ document.addEventListener('DOMContentLoaded', function(){
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (emailRegex.test(inputMail.value)){
             errorState.classList.remove('error-show')
+            inputMail.classList.remove('error-border')
         }else{
             errorState.classList.add('error-show')
+            inputMail.classList.add('error-border')
         }
     }
     inputBtn.addEventListener('click', isValidateEmail)
