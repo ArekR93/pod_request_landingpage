@@ -1,0 +1,33 @@
+$green: #54e6af;
+$blue950: #121725;
+$blue900: #2c344b;
+$blue600: #5a668A;
+$blue300: #c2cbe5;
+$white: #FFFFFF;
+$red: #fb3e3e;
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin chivoLightUpp{
+    font-family: "Chivo", sans-serif;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0px;
+}
+@mixin chivoLight{
+    font-family: "Chivo", sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+@mixin chivoBold{
+    font-family: "Chivo", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: 0;
+}
