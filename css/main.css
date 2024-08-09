@@ -122,6 +122,14 @@ main .content-box form .input-box .input-mail::placeholder {
   letter-spacing: 0;
   color: #c2cbe5;
 }
+main .content-box form .input-box .input-mail[type=text] {
+  font-family: "Chivo", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 200%;
+  letter-spacing: 0;
+  color: #c2cbe5;
+}
 main .content-box form .input-box .input-btn {
   background-color: #54e6af;
   color: #121725;
@@ -130,7 +138,7 @@ main .content-box form .input-box .input-btn {
   font-size: 14px;
   line-height: 200%;
   letter-spacing: 0;
-  padding: 0.4em 2em;
+  padding: 0.8em 2em;
   border: none;
   border-radius: 25px;
 }
@@ -143,4 +151,7 @@ main .content-box form .input-box .error-state {
   letter-spacing: 0;
   color: #fb3e3e;
   text-align: center;
+}
+main .content-box form .input-box .error-show {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
