@@ -180,13 +180,16 @@ main .content-box form .input-box .error-border {
   }
   main .content-box {
     background-color: #121725;
-    padding: 1em 2em;
+    padding: 0;
     height: 100vh;
     align-items: flex-start;
     justify-content: flex-start;
   }
   main .content-box .logo {
-    margin-top: 6em;
+    background-color: #121725;
+    margin-top: 0em;
+    padding-top: 6em;
+    z-index: 1;
   }
   main .content-box .text-content {
     margin-top: 1em;

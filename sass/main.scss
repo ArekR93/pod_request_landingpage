@@ -184,12 +184,15 @@ main{
 
         .content-box{
             background-color: $blue950;
-            padding: 1em 2em;
+            padding: 0;
             height: 100vh;
             align-items: flex-start;
             justify-content: flex-start;
             .logo{
-                margin-top: 6em;
+                background-color: $blue950;
+                margin-top: 0em;
+                padding-top: 6em;
+                z-index: 1;
             }
             .text-content{
                 margin-top: 1em;
