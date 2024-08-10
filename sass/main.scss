@@ -47,7 +47,7 @@ main{
     }
     .mobile-pattern{
         width: 100%;
-        height: 100vh;
+        height: 736px;
         position: absolute;
         top: 0;
         z-index: -2;
@@ -56,7 +56,7 @@ main{
         position: absolute;
         top: 0;
         width: 100%;
-        height: 100vh;
+        height: 736px;
         background-color: $blue950;
         opacity: .6;
         z-index: -1;
@@ -99,16 +99,16 @@ main{
                 margin-right: 1em;
             }
             .sm-icon-spotify{
-                width: 60px;
-            }
-            .sm-icon-apple{
                 width: 50px;
             }
+            .sm-icon-apple{
+                width: 40px;
+            }
             .sm-icon-google{
-                width: 80px;
+                width: 70px;
             }
             .sm-icon-pocket{
-                width: 80px;
+                width: 70px;
             }
             
         }
