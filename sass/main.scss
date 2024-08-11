@@ -71,7 +71,7 @@ main{
         .logo{
             margin-top: 6em;
         }
-        .text-content{
+        .main-content{
             margin-top: 1em;
             margin-bottom: 4em;
             .text-title{
@@ -169,13 +169,19 @@ main{
             display: block;
         }
         .tablet-pattern{
+            background-image: url(../assets/desktop/image-host.jpg);
+            width: 100%;
+            height: 85%;
+            background-size:contain;
+            background-position: right;
+            background-repeat: no-repeat;
             position: absolute;
             top: 0;
-            width: 150%;
+            z-index: 0;
         }
         .tablet-pattern-decoration{
             position: absolute;
-            bottom: 160px;
+            bottom: 110px;
             right: -100px;
             width: 180px;
             z-index: 1;
@@ -193,47 +199,42 @@ main{
             height: 100vh;
             align-items: flex-start;
             justify-content: flex-start;
+            padding-left: 3em;
             .logo{
                 background-color: $blue950;
                 margin-top: 0em;
-                padding-top: 6em;
-                padding-right: 14em;
-                padding-bottom: 11em;
+                width: 30%;
+                height: 35%;
                 z-index: 1;
-                img{
-                    margin-left: 3em;
-                }
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
             }
-            .text-content{
+            .main-content{
+                padding-top: 3em;
                 background-color: $blue950;
-                margin-top: -2em;
-                padding-top: 4em;
-                margin-bottom: 4em;
-                width: 85%;
+                width: 75%;
                 z-index: 1;
+                display: flex;
+                flex-direction: column;
                 
                 .text-title{
                     font-size: 50px;
                     text-align: left;
-                    margin-left: 1em;
-                    .title-white{
-                        color:$white;
-                    }
+                    margin-left: 0;
+
                 }
                 .text-paragraph{
-                    width: 80%;
-                    margin-top: 3em;
-                    font-size: 21px;
+                    width: 82%;
+                    margin-top: 1em;
+                    font-size: 18px;
                     text-align: left;
-                    margin-left: 2.4em;
                     margin-bottom: 2em;
                     
                 }
             }
             .sm-box{
-                width: 80%;
                 justify-content: flex-start;
-                margin-left: 3em;
                 margin-bottom: 5em;
                 order: 1;
                 .sm-icon{
@@ -254,20 +255,107 @@ main{
                 
             }
             form{
-                margin-top: -6em;
-                padding-top: 2em;
-                padding-bottom: 2em;
                 background: $blue950;
                 z-index: 1;
-                width: 85%;
+
                 .input-box{
                     display: flex;
                     flex-direction: row;
-                    flex-wrap: wrap;
                     align-items: center;
                     width: 80%;
-                    margin-left: 3em;
                     position: relative;
+                    margin-bottom: 3em;
+                    .input-mail{
+                        width: 100%;
+                    }
+                    
+
+                    .input-btn{
+                        position: absolute;
+                        right: 5px;
+                        top: 5px;
+                        
+    
+                    }
+                    .error-state{
+                        margin-left: 2em;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1200px){
+    main{
+        .tablet-pattern, .tablet-pattern-decoration{
+            display: block;
+        }
+        .tablet-pattern{
+            margin-top: 5em;
+            width: 100%;
+            background-position: left;
+            background-size: cover;
+        }
+        .tablet-pattern-decoration{
+            position: absolute;
+            bottom: 50px;
+            right: 0px;
+        }
+
+        .content-box{
+            display: flex;
+            margin-left: -.5em;
+            .main-content{
+                margin-top: -.5em;
+                
+                .text-title{
+                    font-size: 60px;
+
+                }
+                .text-paragraph{
+                    width: 68%;
+                    margin-top: 1em;
+                    font-size: 24px;
+                    text-align: left;
+                    margin-bottom: 3em;
+                    
+                }
+            }
+            .sm-box{
+                justify-content: flex-start;
+                margin-bottom: 3em;
+                order: 1;
+                .sm-icon{
+                    margin-right: 1em;
+                }
+                .sm-icon-spotify{
+                    width: 120px;
+                }
+                .sm-icon-apple{
+                    width: 120px;
+                }
+                .sm-icon-google{
+                    width: 150px;
+                }
+                .sm-icon-pocket{
+                    width: 150px;
+                }
+                
+            }
+            form{
+                background: $blue950;
+                z-index: 1;
+
+                .input-box{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 70%;
+                    position: relative;
+                    margin-bottom: 5em;
                     .input-mail{
                         width: 100%;
                     }
