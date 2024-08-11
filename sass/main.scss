@@ -211,6 +211,7 @@ main{
                 justify-content: flex-start;
             }
             .main-content{
+                margin-top: -.5em;
                 padding-top: 3em;
                 background-color: $blue950;
                 width: 75%;
@@ -289,6 +290,9 @@ main{
 
 
 @media (min-width:1200px){
+    body{
+        background-color: $blue950;
+    }
     main{
         .tablet-pattern, .tablet-pattern-decoration{
             display: block;

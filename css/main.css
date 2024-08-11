@@ -210,6 +210,7 @@ main .content-box form .input-box .error-border {
     justify-content: flex-start;
   }
   main .content-box .main-content {
+    margin-top: -0.5em;
     padding-top: 3em;
     background-color: #121725;
     width: 75%;
@@ -274,6 +275,9 @@ main .content-box form .input-box .error-border {
   }
 }
 @media (min-width: 1200px) {
+  body {
+    background-color: #121725;
+  }
   main .tablet-pattern, main .tablet-pattern-decoration {
     display: block;
   }
